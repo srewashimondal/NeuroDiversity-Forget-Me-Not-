@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page with Status and Manager Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+         .navbar {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+          background-color: #FFE4E1;
+        }
+
+#fixedImage {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  max-width: 100%; /* Prevent it from exceeding its parent's width */
+  max-height: 100%; /* Prevent it from exceeding its parent's height */
+  object-fit: contain; /* Maintain aspect ratio and fit within the defined dimensions */
+}
+      
+        .nav-links {
+          display: flex;
+            justify-content: center;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+        }
+
+        .navbar a {
+          
+            font-size: 28px;
+            color: #D85D73;
+            text-align: center;
+            padding:30px;
+            text-decoration: none;
+            outline: none;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            background-color: #FFFAF0;
+            opacity: .6;
+        }
+
+        .profile {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            object-position: 250px 125px;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+        }
+
+        .profile-info h2 {
+            font-size: 18px;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .profile-status {
+            margin-top: 20px;
+        }
+
+        .profile-status h2 {
+            font-size: 18px;
+        }
+
+        .profile-status p {
+            font-size: 16px;
+        }
+
+        .profile-manager-notes {
+            margin-top: 20px;
+        }
+
+        .profile-manager-notes h2 {
+            font-size: 18px;
+        }
+
+        .profile-manager-notes p {
+            font-size: 16px;
+            line-height: 1.5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .profile-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .profile-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<img src="Forget-me-not (1).png" alt="Logo" width="200" height="100" class="center" id="fixedImage">
+    <div class="navbar">
+        <div class="nav-links">
+          <a href="home.html" class="nav">Home</a>
+            <a href="index.html" class="nav">Overview</a>
+            <a href="profile.html" class="nav">Profile</a>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="profile-header">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-name">John Doe</div>
+        </div>
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>Experienced Web Developer with a passion for creating user-friendly web applications.</p>
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+            <h2>Experience</h2>
+            <p>Web Developer at ABC Tech (3 years)</p>
+        </div>
+        <div class="profile-status">
+            <h2>Status</h2>
+            <p>Currently working on an exciting project!</p>
+        </div>
+        <div class="profile-manager-notes">
+            <h2>Manager's Notes</h2>
+            <p>John is doing great with keeping up with the team meetings. Need to assign him the next group meeting with the new members of the committee. I will email him regarding the details today.</p>
+        </div>
+        <div class="profile-actions">
+            <button class="profile-button">Connect</button>
+        </div>
+    </div>
+</body>
+</html>
