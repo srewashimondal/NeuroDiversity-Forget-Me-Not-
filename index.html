@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sideview Calendar</title>
+    <style>
+      siv{
+  margin-left:450px;
+  margin-top: 2%;
+}
+           #flashcards {
+            list-style: none;
+            padding: 0;
+        }
+
+        .flashcard {
+          
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+           border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .flashcard button {
+            background-color: rgb(230, 1, 1);
+            color: white;
+            border: none;
+            font-size:75%;
+            margin-left: 20px;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+          background-color:white;red
+          background-color:white;#333
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .event {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .event:hover {
+            background-color: #ddd;
+        }
+
+        .event-details {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+          background-color: #FFE4E1;
+        }
+ .logo-profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+
+        #fixedImage {
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+        }
+/*#fixedImage {
+  width: 200px;
+  height: 200px; 
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain; 
+}
+      */
+        .nav-links {
+          display: flex;
+            justify-content: center;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+        }
+
+        .navbar a {
+          
+            font-size: 28px;
+            color: #D85D73;
+            text-align: center;
+            padding:30px;
+            text-decoration: none;
+            outline: none;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            background-color: #FFFAF0;
+            opacity: .6;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center items horizontally */
+            margin: 20px;
+        }
+
+        .task-list,
+        .to-do-list {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 70%; /* Make them the same length horizontally */
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px; /* Add space between the two boxes */
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        input[type="text"] {
+            width: 70%; /* Adjust the width for input fields */
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+      
+      .center{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+      }
+      #element1 {float:left;}
+    #element2 {float:right;}
+
+.status-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .online {
+            background-color: green;
+        }
+
+        .offline {
+            background-color: red;
+        }
+
+        .status-text {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+      
+          #element3{
+            float:left
+          }   
+
+       .task-list li, .to-do-list li {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .task-list button, .to-do-list button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+      .delete-button {
+        padding: 5px 10px;
+        background-color: #ff0000; /* Red background color */
+        color: #fff; /* White text color */
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+     <div class="logo-profile-container">
+        <img src="Forget-me-not (1).png" alt="Logo" width="200" height="100" id="fixedImage">
+    </div>
+    <div class="navbar">
+        <div class="nav-links">
+          <a href="home.html" class="nav">Home</a>
+            <a href="index.html" class="nav">Overview</a>
+            <a href="profile.html" class="nav">Profile</a>
+        </div>
+    </div>
+    <div id="element1">
+        <h1>Daily To-Do List</h1>
+        <ol id="flashcards"></ol>
+        <label for="answer">Enter Task:</label>
+        <input type="text" id="answer" placeholder="To-Do Task">
+        <button onclick="addFlashcard()">Add task</button>
+    </div>
+    <div class="status-container" onclick="toggleStatus(this)">
+        <div class="status-indicator online"></div>
+        <span class="status-text">Online</span>
+    </div>
+    <div id="element2">
+        <iframe src="https://calendar.google.com/calendar/embed?src=ingetters%40gmail.com&ctz=UTC" style="border: 0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="container">
+    <div class="task-list">
+        <h2>Tasks from Manager</h2>
+        <ul id="task-list"></ul>
+        <input type="text" id="newTaskInput" placeholder="Add a new task">
+        <button class="delete-button" id="addTaskListButton">Add</button>
+    </div>
+        <div class="to-do-list">
+            <h2>Reminders:</h2>
+            <ul id="to-do-list"></ul>
+            <input type="text" id="newTodoInput" placeholder="Add a new reminder">
+            <button class="delete-button" id="addTodoListButton">Add</button>
+        </div>
+    </div>
+    <script>
+     let flashcardIndex = 1;
+
+        function addFlashcard() {
+            const answer = document.getElementById('answer').value;
+            if (answer) {
+                const flashcards = document.getElementById('flashcards');
+                const li = document.createElement('li');
+                li.className = 'flashcard';
+                const flashcardCode = `F${flashcardIndex}`;
+                li.innerHTML = `
+                    ${answer}
+                    <button onclick="removeFlashcard(this)">Remove</button>
+                `;
+                flashcards.appendChild(li);
+                document.getElementById('answer').value = '';
+                flashcardIndex++;
+            }
+        }
+
+        function removeFlashcard(button) {
+            const flashcards = document.getElementById('flashcards');
+            flashcards.removeChild(button.parentNode);
+        }
+
+        // JavaScript code for status toggle
+        function toggleStatus(container) {
+            const statusIndicator = container.querySelector('.status-indicator');
+            if (statusIndicator.classList.contains('online')) {
+                statusIndicator.classList.remove('online');
+                statusIndicator.classList.add('offline');
+                container.querySelector('.status-text').textContent = 'Offline';
+            } else {
+                statusIndicator.classList.remove('offline');
+                statusIndicator.classList.add('online');
+                container.querySelector('.status-text').textContent = 'Online';
+            }
+        }
+
+        // JavaScript code for adding and removing tasks
+        const taskList = document.getElementById("task-list");
+
+        function addTask(input) {
+            const task = input.value.trim();
+            if (task) {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <span>${task}</span>
+                    <button class="delete-button" onclick="removeTask(this)">Delete</button>
+                `;
+                taskList.appendChild(li);
+                input.value = "";
+            }
+        }
+
+        function removeTask(button) {
+            const listItem = button.parentElement;
+            taskList.removeChild(listItem);
+        }
+
+        // Add a new task when the "Add" button is clicked
+        document.getElementById("addTaskListButton").addEventListener("click", function () {
+            addTask(document.getElementById("newTaskInput"));
+        });
+
+        // JavaScript code for adding and removing to-do list items
+        const toDoList = document.getElementById("to-do-list");
+
+        function addTodoItem(input) {
+            const todo = input.value.trim();
+            if (todo) {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <span>${todo}</span>
+                    <button class="delete-button" onclick="removeTodoItem(this)">Delete</button>
+                `;
+                toDoList.appendChild(li);
+                input.value = "";
+            }
+        }
+
+        function removeTodoItem(button) {
+            const listItem = button.parentElement;
+            toDoList.removeChild(listItem);
+        }
+
+        // Add a new to-do item when the "Add" button is clicked
+        document.getElementById("addTodoListButton").addEventListener("click", function () {
+            addTodoItem(document.getElementById("newTodoInput"));
+        });
+</script>
+
+
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
