@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .navbar {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            background-color: #FFE4E1;
+        }
+
+        #fixedImage {
+            width: 200px;
+            height: 200px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+        }
+
+        .navbar a {
+            font-size: 28px;
+            color: #D85D73;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+            outline: none;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            background-color: #FFFAF0;
+            opacity: .6;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto; /* Add space to the top and bottom of the container */
+            padding: 20px;
+        }
+
+        /* Style for paragraphs */
+        .paratext p {
+            font-size: 20px; /* Increase the text size for paragraphs */
+            margin: 0 20px; /* Add space to the left and right of text */
+        }
+
+        .paratext h3 {
+            font-weight: bold;
+        }
+
+
+      .flip-card {
+  margin: 15px;
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+
+  transform: rotateX(-180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 2px solid black;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(243, 161, 53);
+  color: white;
+  transform: rotateX(-180deg);
+
+}
+
+.card-text {
+  padding: 15px;
+}
+
+.cards {
+  padding: 40px;
+  justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <img src="Forget-me-not (1).png" alt="Logo" width="200" height="100" id="fixedImage">
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="home.html" class="nav">Home</a>
+            <a href="index.html" class="nav">Overview</a>
+            <a href="profile.html" class="nav">Profile</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="paratext">
+            <h1 style="text-align: center;">Forget-Me-Not</h1>
+            <h3><b>Forget-Me-Not serves as a resource for people with Autism Spectrum Disorder (ASD) in the workforce.</b></h3>
+            <p>Did you know that according to the Centers for Disease Control and Prevention (CDC), about 1% of the world's population has autism spectrum disorder – over 75,000,000 people! 1 in every 49 children are diagnosed with autism spectrum disorder. Autism prevalence has increased 178% since 2000.</p>
+          <ul></ul>
+            <p>There are many autistic people struggling to receive employment. Here are some reasons autistic people are needed in the job place:</p>
+           
+          <section class = "description">
+      <h3 class = "description-heading"></h3>
+      <div class = "projects-text">
+        <section class = "cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/9648e5564d5e4628a8b37f0aa5d572b0.jpg" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <article class = "card-text">
+                  <h1 class = "projects-name">#1: </h1> 
+                  <p>Early research into the strengths of autistic people focused on savant abilities, such as the ability to perform rapid mental mathematical calculations, or draw detailed scenes from memory.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class = "cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://hdcdnsun2.r.worldssl.net/sites/www.hypnosisdownloads.com/files/product-images/attention-detail.jpg" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <article class = "card-text">
+                  <h1 class = "projects-name">#2: </h1> 
+                  <p>Many individuals with autism excel in tasks that require a keen eye for detail. They often notice things that others might overlook, making them valuable in fields such as quality control, research, and programming.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class = "cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://www.workitdaily.com/media-library/young-professional-man-looking-excited-at-his-desk-because-he-s-confident-that-he-s-found-a-job-he-s-passionate-about.jpg?id=22021161&width=1200&height=800&quality=85&coordinates=0%2C0%2C0%2C0" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <article class = "card-text">
+                  <h1 class = "projects-name">#3: </h1> 
+                  <p>Individuals with autism may develop intense, focused interests in specific subjects or activities. This can lead to deep expertise in their chosen area and potentially successful careers in those fields.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class = "cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://www.whereyoulivematters.org/wp-content/uploads/9bd4cd3a-shutterstock_495577159.jpg" style="width:400px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <article class = "card-text">
+                  <h1 class = "projects-name">#4: </h1> 
+                  <p>People with autism often form strong, loyal bonds with team members, friends, and family members.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+               <ul></ul>
+            <p>In the workforce, autistic people may not show clear signs of disability, but they may still struggle with social skills like reading body language or being comfortable in a group. This can lead to missed opportunities at work and misunderstandings with bosses and coworkers. Autistic people often become very stressed when confronted with change. In the workplace, there's potential for change to happen overnight, often in a way that is out of the autistic person's control. The anxiety of trying to cope with change can lead some people to leave their job altogether.</p>
+          <ul></ul>
+            <p><em>Did you know that an autistic professional is up to <b>140%</b> more productive than an average employee when properly matched to a job that fits their skills? </em>Yet, discrimination against neurodivergent people continues. This is the problem Forget-Me-Not is working towards solving. We are providing this task workplace management platform accessible to provide autistic people the resources they need to successfully manage, complete, and uphold tasks required in the job force.</p>
+        </div>
+    </div>
+</body>
+</html>
