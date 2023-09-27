@@ -1,5 +1,5 @@
 # NeuroDiversity-Forget-Me-Not-
-NeuroDiversity: Forget-Me-Not bridges workforce gaps with task management website for seamless communication, empowering neurodivergent individuals with detailed instructions and flexible management.
+NeuroDiversity: Forget-Me-Not bridges workforce gaps with task management website for seamless communication, empowering neurodivergent individuals with detailed instructions and flexible management. We created this website for Columbia University's DivHacks 2023 hackathon and won Best Beginner Hack Award and Diversity Award.
 
 ![image](https://github.com/srewashimondal/NeuroDiversity-Forget-Me-Not-/assets/67836280/56a37d31-5a50-47df-867d-d18e407eb8e3)
 
