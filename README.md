@@ -1,6 +1,9 @@
 # NeuroDiversity-Forget-Me-Not-
 NeuroDiversity: Forget-Me-Not bridges workforce gaps with task management website for seamless communication, empowering neurodivergent individuals with detailed instructions and flexible management.
 
+![image](https://github.com/srewashimondal/NeuroDiversity-Forget-Me-Not-/assets/67836280/56a37d31-5a50-47df-867d-d18e407eb8e3)
+
+
 Inspiration:
 We are deeply inspired by the idea of NeuroDiversity: Forget-Me-Not because it addresses a pressing issue in the workforce that has been largely overlooked. It's disheartening to see the number of autistic individuals in the workforce decreasing when their unique skills, like quick thinking and intelligence, are in high demand. This project is important because it aims to create inclusiveness for neurodivergent individuals, ensuring they have equal opportunities to thrive in the workplace. What sets Forget-Me-Not apart is its dedication to catering specifically to the needs of autistic people, providing them with the tools and support they require for success.
 
